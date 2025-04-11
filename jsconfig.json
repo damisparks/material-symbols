@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/jsconfig",
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "maxNodeModuleJsDepth": 10,
+    "module": "preserve",
+    "noEmit": true,
+    "noUncheckedSideEffectImports": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "typeAcquisition": {
+    "enable": false
+  },
+  "include": ["**/.*", "**/.*/**/*", "**/*"],
+  "exclude": ["icons/material-symbols"]
+}

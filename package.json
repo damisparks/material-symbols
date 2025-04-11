@@ -1,12 +1,49 @@
 {
   "name": "@damisparks/material-symbols",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React components implementing the Material UI component SvgIcon using the Material Symbols Rounded icons from Google Fonts",
+  "packageManager": "pnpm@10.8.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damisparks/material-symbols.git"
+  },
+  "files": [
+    "icons/material-symbols"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=22.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "build": "node build-material-symbols.mjs",
+    "prepare": "pnpm run build",
+    "typecheck": "tsc -p jsconfig.json",
+    "check": "pnpm run lint && pnpm run typecheck"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": {
+    "name": "Dami Sparks",
+    "email": "rethinkwithdami@gmail.com",
+    "url": "https://damisparks.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@material-symbols/svg-300": "^0.30.0",
+    "@mui/material": "^7.0.2",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-comment-length": "^2.2.1",
+    "eslint-plugin-import-x": "^4.10.2",
+    "eslint-plugin-jsdoc": "^50.6.9",
+    "eslint-plugin-optimal-modules": "^3.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  },
+  "peerDependencies": {
+    "@mui/material": "6 - 7",
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  }
 }
