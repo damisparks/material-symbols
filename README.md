@@ -20,7 +20,7 @@ The package doesn't have a main index module, so use deep imports (using the fil
 - `icons/material-symbols`: Modules each named `IconMaterialSymbols` + the [Google Material Symbols](https://fonts.google.com/icons) icon name in pascal case + `Fill` (optionally, if the icon has a fill variant) or `OutlineRounded` (optionally, if the icon has a rounded variant) + `.mjs`, default exporting a React component implementing the [Material UI](https://mui.com/material-ui) component [`SvgIcon`](https://mui.com/material-ui/api/svg-icon). Example:
 
   ```js
-  import MaterialSymbolsIconKeyboardArrowDownOutlineRounded from "@damisparks/material-symbols/icons/material-symbols/MaterialSymbolsIconKeyboardArrowDownOutlineRounded.mjs";
+  import MaterialSymbolsStarOutlineRounded from "@damisparks/material-symbols/icons/material-symbols/MaterialSymbolsStarOutlineRounded.mjs";
   ```
 
 ## Requirements
